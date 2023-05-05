@@ -1,0 +1,118 @@
+.bg{
+    background-image: url('/assets/images/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header{
+    background-color: #0000007a;;
+    box-shadow: 0px -6px 20px 0px #20c2ff;
+}
+h1{
+    font-size: 70px;
+    letter-spacing: 38px;
+    color: #a3b8d7;
+    text-align: center;
+}
+main{
+   height: 86%;
+}
+.main_block h3{
+    color: #aeaeae;
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+}
+.context{
+    position: fixed;
+    display: none;
+    background-color: white;
+    padding: 3px 30px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.context:hover{
+    background-color: #4a5858;
+}
+.pop-up{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    visibility: hidden;
+    position: absolute;
+    background-color: #0000009e;
+    top: -100%;
+    left: 0;
+    justify-content: center;
+    transform: scale(0.1);
+    align-items: center;
+    transition: 0.8s;
+    display: flex;
+}
+.pop-upFolder{
+    width: 300px;
+}
+.pop-up img{
+    width: 100%;
+}
+.pop-up input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 20px 0
+}
+.pop-up button{
+    padding: 5px 15px;
+    margin-top: 10px;
+    transition: 0.2s;
+    border: none;
+}
+
+
+main div img{
+    width: 70px;
+}
+.main_block div{
+    cursor: pointer;
+    padding: 2px 10px;
+    transition-duration: 0.3s;
+    text-align: center;
+}
+.main_block{
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.main_block div:hover{
+    box-shadow: 4 11 4 black;
+    box-shadow: 0px 20px 20px 0px black;
+    border-radius: 14px;
+}
+
+header p{
+    font-size: 20px;
+    color: #a3b8d7;
+}
+.buttons{
+    justify-content: space-around
+}
+.buttons button:hover{
+    background-color: #91a3c0;
+}
+header img{
+    width: 20px;
+}
+header a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #91a3c0;
+    transition: 0.2s;
+    margin-right: 20px;
+}
+header a:hover{
+    transform: scale(1.2);
+}
+.main_block div{
+    width: 110px;
+}

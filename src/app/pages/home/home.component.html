@@ -1,0 +1,44 @@
+<div class="bg" (click)="closeContext()">
+    <header>
+      <div class="container">   
+        <div >       
+            <h1>Folders</h1>
+        </div>  
+        <div class="flex">
+          <a href="" (click)="locationPrew($event)">
+            <img src="../assets/images/left.png" alt="">
+          </a>
+          <p>{{folderNames}}</p>      
+        </div> 
+      </div>
+    </header>
+    <main (contextmenu)="contextMenu($event)">
+      <div class="container">
+        <div class="flex main_block">
+          <div *ngFor ="let item of data, let i = index" (dblclick)="dblClick(item)" (contextmenu)="deleteMenu($event, i)">
+            <img src={{item.icon}} alt="folder">
+            <h3>{{item.name}}</h3>
+          </div>
+        </div>
+        <span class="context" #span (click)="openPopup()">
+          New Folder
+        </span>
+        <span class="context" #contextDelete (click)="deleteFolder()">
+          Delete
+        </span>
+      </div>
+    </main>
+  
+    <div class="pop-up" [ngStyle] = "blockStyle" >
+      <div class="pop-upFolder">
+          <img src="../assets/images/folder2.png" alt="">
+          <input type="text" placeholder="Enter The Folder Name"  #input>
+        <div class="flex buttons">
+          <button type="submit" (click)="saveFolder()">Save</button>
+          <button (click)="closePopup()">Cancel</button>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  
